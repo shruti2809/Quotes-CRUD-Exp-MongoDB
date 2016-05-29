@@ -7,3 +7,6 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
 })
 // Note: __dirname is the path to your current working directory. Try logging it and see what you get!
+app.post('/quotes', (req, res) => {
+  console.log('Hellooooooooooooooooo!')
+})
