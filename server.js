@@ -4,6 +4,6 @@ app.listen(3000, function() {
   console.log('listening on 3000')
 })
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.sendFile(__dirname + '/index.html')
 })
-console.log('May Node be with you! :)')
+// Note: __dirname is the path to your current working directory. Try logging it and see what you get!
